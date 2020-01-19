@@ -22,8 +22,7 @@ $size: (
 // Font.
 $font: (
     family:				('Open Sans', sans-serif),
-    family-heading:		('Roboto Slab', serif),
-    family-fixed:		('Courier New', monospace),
+    family-heading:		('Source Sans Pro', sans-serif),
     weight:				400,
     weight-bold:		600,
     weight-heading:		700,
@@ -34,11 +33,12 @@ $font: (
 // Palette.
 $palette: (
     bg:					#2B2C30,
-    bg-alt:				#f5f6f7,
-    fg:					#7f888f,
-    fg-bold:			#3d4449,
-    fg-light:			#9fa3a6,
-    border:				rgba(210,215,217,0.75),
-    border-bg:			transparentize(#e6ebed, 0.75),
-    accent:				#f56a6a
+    lead-dr:            #2B2C30,
+    lead-lg:            #5ED3F3,
+    lead-lg-a:			transparentize(#5ED3F3, 0.75),
+    fg:					#707070,
+    fg-light:			#bad1d1,
+    border:             transparentize(#5ED3F3, 0.75),
+    border-bg:			transparentize(#E6EbED, 0.75),
+    border-dr:          transparentize(#707070, 0.75),
 );
