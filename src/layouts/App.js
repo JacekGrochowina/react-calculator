@@ -6,13 +6,13 @@ import Header from './Header';
 import Page from './Page';
 import Footer from './Footer';
 
-function App() {
+const App = () => {
     return (
-        <div className="app">
+        <div className="app container">
 
             <Header />
 
-            <main>
+            <main className="app__main main">
                 <Page />
             </main>
 
