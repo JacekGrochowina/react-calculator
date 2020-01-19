@@ -1,10 +1,17 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-function Page() {
+import HomePage from '../pages/HomePage';
+
+const Page = () => {
     return (
-        <header className="app">
-            Kalkulator figur
-        </header>
+        <>
+            <BrowserRouter>
+                <Switch>
+                    <Route path="/" exact component={HomePage} />
+                </Switch>
+            </BrowserRouter>
+        </>
     );
 }
 
