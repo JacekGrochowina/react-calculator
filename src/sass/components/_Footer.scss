@@ -1,0 +1,30 @@
+/* Footer */
+
+    .footer {
+        font-size: .8rem;
+        padding: _size(element-margin) 0;
+        border-top: 1px solid _palette(border-dr);
+        &__span {
+            padding: 0 .5rem;
+            &--break {
+                border-right: 2px solid _palette(border);
+            }
+        }
+        &__link {
+            color: _palette(lead-lg-a);
+            &:hover {
+                color: _palette(lead-lg);
+            }
+        }
+
+        @include breakpoint('<=xsmall') {
+            .footer {
+                &__span {
+                    display: block;
+                    &--break {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+    }
