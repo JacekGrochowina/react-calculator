@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Header() {
+const Header = () => {
     return (
-        <header className="app">
-            Kalkulator figur
+        <header className="app__header header">
+            <h1 class="header__h1">Kalkulator figur</h1>
         </header>
     );
 }
