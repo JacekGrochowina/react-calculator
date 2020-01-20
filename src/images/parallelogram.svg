@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="121.86015mm"
-   height="62.002342mm"
-   viewBox="0 0 121.86014 62.002342"
+   width="123.05045mm"
+   height="63.002342mm"
+   viewBox="0 0 123.05044 63.002342"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="rownoleglobok.svg">
+   sodipodi:docname="parallelogram.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-381.34354"
-     inkscape:cy="128.90039"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="343.17023"
+     inkscape:cy="125.3309"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,22 +57,24 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-74.438812,-120.93588)">
+     transform="translate(-73.843659,-120.43588)">
     <g
        id="layer1-7"
        inkscape:label="Layer 1"
-       transform="translate(21.711761,29.665048)">
+       transform="translate(21.711761,29.665048)"
+       style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none">
       <g
          transform="translate(-0.481191,-4.999471)"
          inkscape:label="Layer 1"
-         id="layer1-1">
+         id="layer1-1"
+         style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none">
         <g
-           style="stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+           style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none"
            transform="matrix(1,0,-0.19030563,1,32.521393,0.15423835)"
            inkscape:label="Layer 1"
            id="layer1-6">
           <rect
-             style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:5;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
              id="rect819-9"
              width="106.06075"
              height="58.002342"

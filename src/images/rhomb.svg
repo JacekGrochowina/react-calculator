@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="72.242126mm"
-   height="72.242126mm"
-   viewBox="0 0 72.242126 72.242126"
+   width="102.29882mm"
+   height="82.223045mm"
+   viewBox="0 0 102.29882 82.223045"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="kwadrat.svg">
+   sodipodi:docname="rhomb.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,21 +25,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-318.38746"
-     inkscape:cy="95.898254"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-42.952817"
+     inkscape:cy="119.19"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer1-1"
      showgrid="false"
      units="mm"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1672"
-     inkscape:window-y="-8"
+     fit-margin-top="5"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="5"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -57,18 +57,25 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-57.781683,-101.96428)">
+     transform="translate(-63.38079,-117.04734)">
     <g
-       id="layer1-9"
+       id="layer1-8"
        inkscape:label="Layer 1"
-       transform="translate(-12.686548,10.985644)">
-      <rect
-         y="92.978638"
-         x="72.468231"
-         height="68.242126"
-         width="68.242126"
-         id="rect819"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       transform="translate(8.4220988,36.058625)">
+      <g
+         transform="translate(-0.481191,-4.999471)"
+         inkscape:label="Layer 1"
+         id="layer1-1">
+        <rect
+           transform="matrix(1,0,-0.13765637,0.99048005,0,0)"
+           ry="0"
+           style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:4.01917696;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect819"
+           width="68.242126"
+           height="68.898033"
+           x="90.132477"
+           y="93.872299" />
+      </g>
     </g>
   </g>
 </svg>

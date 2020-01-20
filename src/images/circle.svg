@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="72.242126mm"
+   width="92.242126mm"
    height="72.242126mm"
-   viewBox="0 0 72.242126 72.242126"
+   viewBox="0 0 92.242126 72.242126"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="kolo.svg">
+   sodipodi:docname="square.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,16 +25,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-317.76516"
-     inkscape:cy="93.663413"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-59.429636"
+     inkscape:cy="120.1591"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="mm"
      fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
+     fit-margin-left="10"
+     fit-margin-right="10"
      fit-margin-bottom="0"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
@@ -57,7 +57,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-57.617032,-101.37298)">
+     transform="translate(-47.617032,-101.37298)">
     <g
        id="layer1-6"
        inkscape:label="Layer 1"

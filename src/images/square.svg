@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="110.06075mm"
-   height="62.002342mm"
-   viewBox="0 0 110.06075 62.002342"
+   width="92.242126mm"
+   height="82.242126mm"
+   viewBox="0 0 92.242126 82.242126"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="prostokat.svg">
+   sodipodi:docname="square.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,17 +25,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-273.25578"
-     inkscape:cy="110.21089"
+     inkscape:zoom="1.4"
+     inkscape:cx="219.20678"
+     inkscape:cy="188.73015"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="mm"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
+     fit-margin-top="5"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="5"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1672"
@@ -57,17 +57,18 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-45.840592,-115.99095)">
+     transform="translate(-47.781683,-96.964282)">
     <g
-       id="layer1-0"
+       id="layer1-9"
        inkscape:label="Layer 1"
-       transform="translate(-4.9370795,19.874884)">
+       transform="translate(-12.686548,10.985644)"
+       style="stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none">
       <rect
-         y="98.116066"
-         x="52.777672"
-         height="58.002342"
-         width="106.06075"
-         id="rect819-9"
+         y="92.978638"
+         x="72.468231"
+         height="68.242126"
+         width="68.242126"
+         id="rect819"
          style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>

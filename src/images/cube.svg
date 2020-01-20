@@ -9,13 +9,13 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="72.242126mm"
-   height="72.257698mm"
-   viewBox="0 0 72.242119 72.257698"
+   width="91.285515mm"
+   height="81.280472mm"
+   viewBox="0 0 91.285505 81.280472"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="szescian.svg">
+   sodipodi:docname="cube.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,21 +25,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-364.82299"
-     inkscape:cy="134.0218"
+     inkscape:zoom="1.4"
+     inkscape:cx="-2.7855914"
+     inkscape:cy="71.046238"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer1-8"
      showgrid="false"
      units="mm"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="1672"
-     inkscape:window-y="-8"
+     fit-margin-top="5"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="5"
+     inkscape:window-width="1680"
+     inkscape:window-height="987"
+     inkscape:window-x="-8"
+     inkscape:window-y="24"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -57,26 +57,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-70.067749,-112.03556)">
+     transform="translate(-60.524359,-107.52275)">
     <g
        id="layer1-0"
        inkscape:label="Layer 1"
-       transform="translate(0.08070834,31.363637)">
+       transform="translate(0.08070834,31.363637)"
+       style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">
       <g
          transform="translate(-0.481191,-4.999471)"
          inkscape:label="Layer 1"
-         id="layer1-1">
+         id="layer1-1"
+         style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">
         <g
            transform="translate(0,0.54954017)"
            inkscape:label="Layer 1"
-           id="layer1-8">
+           id="layer1-8"
+           style="stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none">
           <g
-             style="stroke-width:4.73420429;stroke-miterlimit:4;stroke-dasharray:none"
+             style="stroke-width:3.55065322;stroke-miterlimit:4;stroke-dasharray:none"
              transform="matrix(0.84491495,0,0,0.84491495,11.23874,19.161723)"
              inkscape:label="Layer 1"
              id="layer1-6-5">
             <rect
-               style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:4.73420429;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:3.55065322;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect819-3"
                width="68.242126"
                height="68.242126"
@@ -84,12 +87,12 @@
                y="92.978638" />
           </g>
           <g
-             style="stroke-width:4.73420429;stroke-miterlimit:4;stroke-dasharray:none"
+             style="stroke-width:3.55065322;stroke-miterlimit:4;stroke-dasharray:none"
              transform="matrix(0.84491494,0,0,0.84491494,21.822074,8.5783907)"
              inkscape:label="Layer 1"
              id="layer1-6-5-5">
             <rect
-               style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:4.73420429;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="opacity:1;fill:none;fill-opacity:1;stroke:#5ed3f3;stroke-width:3.55065322;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect819-3-7"
                width="68.242126"
                height="68.242126"
@@ -99,23 +102,23 @@
           <path
              inkscape:connector-curvature="0"
              id="path918"
-             d="m 130.70629,155.9625 10.58334,-10.58334"
-             style="fill:none;stroke:#5ed3f3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+             d="m 130.50583,155.82886 10.58334,-10.58334"
+             style="fill:none;stroke:#5ed3f3;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <path
              inkscape:connector-curvature="0"
              id="path918-8"
              d="m 130.12702,97.720764 10.58334,-10.58334"
-             style="fill:none;stroke:#5ed3f3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+             style="fill:none;stroke:#5ed3f3;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <path
              inkscape:connector-curvature="0"
              id="path918-8-8"
-             d="m 71.885275,97.119409 10.58334,-10.58334"
-             style="fill:none;stroke:#5ed3f3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+             d="m 71.985502,97.253045 10.58334,-10.58334"
+             style="fill:none;stroke:#5ed3f3;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
           <path
              inkscape:connector-curvature="0"
              id="path918-8-8-4"
              d="M 73.241598,154.60619 83.824941,144.02285"
-             style="fill:none;stroke:#5ed3f3;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+             style="fill:none;stroke:#5ed3f3;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         </g>
       </g>
     </g>
