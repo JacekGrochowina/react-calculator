@@ -3,9 +3,12 @@ import React from 'react';
 const Option = (props) => {
 
     return (
-        <div className="main__option">
-            <h3>{props.id}. {props.title}</h3>
-        </div>
+        <>
+            <div className="wraper">
+                <img className="option__img" src={props.icon} alt={props.title} />
+            </div>
+            <h4 className="option__h4">{props.title}</h4>
+        </>
     )
 
 }
