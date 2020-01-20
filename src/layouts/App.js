@@ -12,7 +12,7 @@ const App = () => {
 
             <Header />
 
-            <main className="app__main main">
+            <main className="app__main main row aln-middle">
                 <Page />
             </main>
 
