@@ -1,0 +1,13 @@
+/* HomePage */
+
+    .home {
+        &.row {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content: space-between;
+        }
+        &__option {
+            padding: 1.5em 2em;
+        }
+    }
