@@ -1,0 +1,38 @@
+/* Option */
+
+    .option {
+        text-align: center;
+        background-color: transparent;
+        border: 1px solid transparent;
+        margin-bottom: 1.5em;
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        &, & h4 {
+            transition: border _duration(transition) ease,
+                        color _duration(transition) ease;
+        }
+        &:hover {
+            border: 1px solid _palette(lead-lg);
+        }
+        &:hover h4 {
+            color: _palette(lead-lg);
+        }
+        .wraper {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img {
+            width: 50%;
+            max-width: 100px;
+        }
+        &__h4 {
+            margin: 1em 0 0;
+            font-family: _font(family);
+            color: _palette(fg);
+        }
+    }
