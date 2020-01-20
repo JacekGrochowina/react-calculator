@@ -1,0 +1,14 @@
+/* App */
+
+    .app {
+        background-color:_palette(bg);
+        min-height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+
+        &__main {
+            flex-grow: 1;
+            margin: _size(element-margin) 0;
+        }
+    }
