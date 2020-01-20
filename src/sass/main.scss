@@ -28,9 +28,13 @@
 	
 // Component.
 
-	@import 'components/App';
-	@import 'components/Header';
-	@import 'components/Page';
-	@import 'components/Footer';
+	@import 'components/Row';
+	@import 'components/Option';
+	@import 'components/HomePage';
 
 // Layout.
+
+	@import 'layout/App';
+	@import 'layout/Header';
+	@import 'layout/Page';
+	@import 'layout/Footer';
