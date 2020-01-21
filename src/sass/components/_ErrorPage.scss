@@ -1,0 +1,17 @@
+/* ErrorPage */
+
+    .error {
+        &.subpage__section {
+            text-align: center;
+        }
+        &__h1 {
+            margin: 0;
+        }
+        &__h3 {
+            color: _palette(fg);
+        }
+        &__icon {
+            color: _palette(lead-lg);
+            font-size: 3rem;
+        }
+    }

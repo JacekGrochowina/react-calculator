@@ -1,0 +1,19 @@
+/* Button */
+
+    .button {
+        display: inline-block;
+        padding: 15px 30px;
+        border: 1px solid _palette(fg);
+        transition: border _duration(transition) ease;
+        svg {
+            margin-right: .5rem;
+            color: _palette(fg);
+            transition: transform _duration(transition) ease;
+        }
+        &:hover {
+            border: 1px solid _palette(lead-lg);
+        }
+        &:hover svg {
+            transform: translateX(-10px);
+        }
+    }
