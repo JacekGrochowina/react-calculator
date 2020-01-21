@@ -10,5 +10,8 @@
         &__main {
             flex-grow: 1;
             margin: _size(element-margin) 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     }
