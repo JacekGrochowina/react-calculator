@@ -68,8 +68,8 @@ const style = "home__option option col-3 col-4-medium col-6-small col-12-xsmall"
 const HomePage = () => {
 
     const optionsList = options.map(option => (
-        <Link to={option.path} className={style}>
-            <Option key={option.key} {...option} />
+        <Link to={option.path} key={option.key} className={style}>
+            <Option {...option} />
         </Link>
     ));
 
