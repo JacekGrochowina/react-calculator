@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Calculator extends Component {
 
     state = {
-        name: this.props.name,
+        figure: this.props.name,
         a: undefined,
         b: undefined,
         result: undefined,
@@ -48,32 +48,115 @@ class Calculator extends Component {
         this.setState({
             a: this.props.a,
             b: this.props.b,
-            result: this.calculator.surface.type1(this.state.a, this.state.b),
+            // result: this.calculator.surface.type1(this.state.a, this.state.b),
         })
     }
 
     componentDidUpdate(previousProps, previousState) {
 
         if (previousProps !== this.props) {
-            this.setState({
-                a: this.props.a,
-                b: this.props.b,
-                result: this.calculator.surface.type1(this.props.a, this.props.b),
-            })
+            // działa!
+            // this.setState({
+            //     a: this.props.a,
+            //     b: this.props.b,
+            //     result: this.calculator.surface.type1(this.props.a, this.props.b),
+            // })
+
+            switch (this.props.calcObj) {
+                case "surface":
+                    switch (this.props.calcObjType) {
+                        case "type1":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.surface.type1(this.props.a, this.props.b),
+                            })
+                            break;
+                        case "type2":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.surface.type2(this.props.a, this.props.b),
+                            })
+                            break;
+                        case "type3":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.surface.type3(this.props.a, this.props.b),
+                            })
+                            break;
+                        default:
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: undefined,
+                            })
+                    }
+                    break;
+                case "circuit":
+                    switch (this.props.calcObjType) {
+                        case "type1":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.circuit.type1(this.props.a, this.props.b),
+                            })
+                            break;
+                        case "type2":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.circuit.type2(this.props.a, this.props.b),
+                            })
+                            break;
+                        case "type3":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.circuit.type3(this.props.a, this.props.b),
+                            })
+                            break;
+                        case "type4":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.circuit.type4(this.props.a, this.props.b),
+                            })
+                            break;
+                        default:
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: undefined,
+                            })
+                    }
+                    break;
+                default:
+                    this.setState({
+                        a: this.props.a,
+                        b: this.props.b,
+                        result: "error",
+                    })
+            }
         }
 
     }
 
     render() {
 
+        const { result } = this.state;
+        const { title, abridgement } = this.props;
+        console.log(this.props.calcObj + "." + this.props.calcObjType)
+
         return (
 
             <div className="input-wraper">
-                <h3 className="input__h3">Pole</h3>
+                <h3 className="input__h3">{title}</h3>
                 <div className="row">
-                    <h3 className="input__h3--var">P =</h3>
+                    <h3 className="input__h3--var">{abridgement} =</h3>
                     <input className="input input--result" type="number" disabled="disabled"
-                        value={this.state.result}
+                        value={result}
                     />
                 </div>
             </div>
