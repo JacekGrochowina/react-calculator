@@ -35,6 +35,9 @@
         }
         &-wraper {
             margin-bottom: 2rem;
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
         }
         &--result {
             background-color: transparent;
