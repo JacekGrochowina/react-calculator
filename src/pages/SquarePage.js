@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ButtonWraper from '../components/ButtonWraper';
-import Calculator from '../components/Calculator';
+import Form from '../components/Form';
 
 
 class SquarePage extends Component {
@@ -22,27 +22,29 @@ class SquarePage extends Component {
 
                 <ButtonWraper path="/" text="wstecz" type="back" />
 
-                <section className="subpage__section">
 
-                    {/* Input */}
-                    <div className="input-wraper">
-                        <h3 className="input__h3">Podaj a</h3>
-                        <div className="row">
-                            <h3 className="input__h3--var">a =</h3>
-                            <input className="input" type="number" name="number1" value={this.state.number1} onChange={this.handleOnChange} />
-                        </div>
-                    </div>
+                <section className="subpage__section row">
 
-                    {/* Input */}
-                    <div className="input-wraper">
-                        <h3 className="input__h3">Podaj b</h3>
-                        <div className="row">
-                            <h3 className="input__h3--var">b =</h3>
-                            <input className="input" type="number" name="number2" value={this.state.number2} onChange={this.handleOnChange} />
-                        </div>
-                    </div>
+                    {
+                        /* Props => Form 
+                        
+                            title={1}   =>  "Surface" / "Pole"
+                                  {2}   =>  "Circuit" / "Obwód"
+                        
+                            title={1}   =>  type={1}  / number1*number2
+                                                 {2}  / 0,5*((number1+number2)*number3)
+                                                 {3}  / 3,14*number1*number1
+                                            
+                            title={2}   =>  type={1}  / 2*(number1)+2*(number2)
+                                                 {2}  / 4*(number1)
+                                                 {3}  / number1+number2+number3+number4
+                                                 {4}  / 2*3,14*number1
+                        */
+                    }
 
-                    <Calculator name={"square"} a={Number(this.state.number1)} b={Number(this.state.number2)} />
+                    <Form title={1} type={1} />
+                    <Form title={2} type={1} />
+
                 </section>
 
             </div>
