@@ -1,0 +1,52 @@
+/* Input */
+
+    .input {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid _palette(lead-lg);
+        padding: 5px 15px;
+        margin-left: 1rem;
+        color: _palette(lead-lg);
+        &:focus {
+            box-shadow: none;
+            border-bottom: 2px solid _palette(correct);
+        }
+        &:invalid {
+            box-shadow: none;
+            border-bottom: 2px solid _palette(error);
+        }
+        /* Chrome, Safari, Edge, Opera */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        &[type=number] {
+            -moz-appearance:textfield;
+        }
+        &__h3 {
+            color: _palette(fg);
+            &--var {
+                color: _palette(fg);
+                font-size: 1.5em;
+                margin: 0;
+            }
+        }
+        &-wraper {
+            margin-bottom: 2rem;
+        }
+        &--result {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid transparent;
+            // padding: 5px 15px;
+            margin-left: 1rem;
+            color: _palette(lead-lg);
+            font-weight: _font(weight-bold);
+            &:focus {
+                box-shadow: none;
+                border-bottom: 2px solid transparent;
+            }
+        }
+    }
