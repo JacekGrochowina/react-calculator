@@ -1,0 +1,31 @@
+/* Subpage */
+
+    .subpage {
+        &__container {
+            margin: auto;
+        }
+        &__section {
+            flex-direction: row;
+            margin-top: 2rem;
+        }
+        &__h3 {
+            text-align: center;
+        }
+        &__form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-of-type(1) {
+                border-right: 1px solid _palette(border);
+            }
+        }
+        @include breakpoint('<=small') {
+            &__form {
+                padding: 2rem 0;
+                &:nth-of-type(1) {
+                    border-right: 0px solid _palette(border);
+                    border-bottom: 1px solid _palette(border);
+                }
+            }
+        }
+    }
