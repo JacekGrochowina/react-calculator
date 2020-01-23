@@ -17,11 +17,23 @@ class Form extends Component {
 
     render() {
 
+        const renderInput = (letter, id) => (
+            <div className="input-wraper">
+                <h3 className="input__h3">Podaj {letter}</h3>
+                <div className="row">
+                    <h3 className="input__h3--var">{letter} =</h3>
+                    <input className="input" type="number" name={`number${Number(id)}`} onChange={this.handleOnChange}
+                        value={id === 1 ? this.state.number1 : id === 2 ? this.state.number2 : id === 3 ? this.state.number3 : this.state.number4} />
+                </div>
+            </div>
+        )
+
         let data = {
             title: null,
             abridgement: null,
             calcObj: null,
             calcObjType: null,
+            inputsList: [null],
         }
 
         switch (this.props.title) {
@@ -32,12 +44,15 @@ class Form extends Component {
                 switch (this.props.type) {
                     case 1:
                         data.calcObjType = "type1";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
                         break;
                     case 2:
                         data.calcObjType = "type2";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2), renderInput("h", 3)];
                         break;
                     case 3:
                         data.calcObjType = "type3";
+                        data.inputsList = [renderInput("r", 1)];
                         break;
                     default:
                         data.calcObjType = "error";
@@ -50,15 +65,19 @@ class Form extends Component {
                 switch (this.props.type) {
                     case 1:
                         data.calcObjType = "type1";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
                         break;
                     case 2:
                         data.calcObjType = "type2";
+                        data.inputsList = [renderInput("a", 1)];
                         break;
                     case 3:
                         data.calcObjType = "type3";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2), renderInput("c", 3), renderInput("d", 4)];
                         break;
                     case 4:
                         data.calcObjType = "type4";
+                        data.inputsList = [renderInput("r", 1)];
                         break;
                     default:
                         data.calcObjType = "error";
@@ -69,30 +88,13 @@ class Form extends Component {
                 data.abridgement = "Skrót";
         }
 
-
         return (
             <div className="subpage__form col-6 col-12-small">
                 <div className="subpage__container">
 
                     <h2 className="subpage__h3">{data.title}</h2>
 
-                    {/* Input */}
-                    <div className="input-wraper">
-                        <h3 className="input__h3">Podaj a</h3>
-                        <div className="row">
-                            <h3 className="input__h3--var">a =</h3>
-                            <input className="input" type="number" name="number1" value={this.state.number1} onChange={this.handleOnChange} />
-                        </div>
-                    </div>
-
-                    {/* Input */}
-                    <div className="input-wraper">
-                        <h3 className="input__h3">Podaj b</h3>
-                        <div className="row">
-                            <h3 className="input__h3--var">b =</h3>
-                            <input className="input" type="number" name="number2" value={this.state.number2} onChange={this.handleOnChange} />
-                        </div>
-                    </div>
+                    {data.inputsList}
 
                     <Calculator
                         figure={"square"}
