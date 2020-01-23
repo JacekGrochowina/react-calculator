@@ -34,6 +34,7 @@ class SquarePage extends Component {
                             title={1}   =>  type={1}  / number1*number2
                                                  {2}  / 0,5*((number1+number2)*number3)
                                                  {3}  / 3,14*number1*number1
+                                                 {4}  / number1*number1
                                             
                             title={2}   =>  type={1}  / 2*(number1)+2*(number2)
                                                  {2}  / 4*(number1)
@@ -42,8 +43,8 @@ class SquarePage extends Component {
                         */
                     }
 
-                    <Form title={1} type={1} />
-                    <Form title={2} type={1} />
+                    <Form title={1} type={4} />
+                    <Form title={2} type={2} />
 
                 </section>
 

@@ -7,6 +7,8 @@ class Form extends Component {
     state = {
         number1: undefined,
         number2: undefined,
+        number3: undefined,
+        number4: undefined,
     }
 
     handleOnChange = (e) => {
@@ -54,6 +56,14 @@ class Form extends Component {
                         data.calcObjType = "type3";
                         data.inputsList = [renderInput("r", 1)];
                         break;
+                    case 4:
+                        data.calcObjType = "type4";
+                        data.inputsList = [renderInput("a", 1)];
+                        break;
+                    case 5:
+                        data.calcObjType = "type5";
+                        data.inputsList = [renderInput("a", 1), renderInput("h", 2)];
+                        break;
                     default:
                         data.calcObjType = "error";
                 }
@@ -100,6 +110,8 @@ class Form extends Component {
                         figure={"square"}
                         a={Number(this.state.number1)}
                         b={Number(this.state.number2)}
+                        c={Number(this.state.number3)}
+                        d={Number(this.state.number4)}
                         title={data.title}
                         abridgement={data.abridgement}
                         calcObj={data.calcObj}

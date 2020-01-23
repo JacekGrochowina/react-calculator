@@ -6,6 +6,8 @@ class Calculator extends Component {
         figure: this.props.name,
         a: undefined,
         b: undefined,
+        c: undefined,
+        d: undefined,
         result: undefined,
     }
 
@@ -21,6 +23,10 @@ class Calculator extends Component {
             },
             type3(number1) {
                 let result = 3.14 * number1 * number1;
+                return result;
+            },
+            type4(number1) {
+                let result = number1 * number1;
                 return result;
             },
         },
@@ -41,6 +47,10 @@ class Calculator extends Component {
                 let result = 2 * 3.14 * number1;
                 return result;
             },
+            type5(number1) {
+                let result = number1 * 4;
+                return result;
+            },
         }
     }
 
@@ -48,6 +58,8 @@ class Calculator extends Component {
         this.setState({
             a: this.props.a,
             b: this.props.b,
+            c: this.props.c,
+            d: this.props.d,
             // result: this.calculator.surface.type1(this.state.a, this.state.b),
         })
     }
@@ -55,13 +67,6 @@ class Calculator extends Component {
     componentDidUpdate(previousProps, previousState) {
 
         if (previousProps !== this.props) {
-            // działa!
-            // this.setState({
-            //     a: this.props.a,
-            //     b: this.props.b,
-            //     result: this.calculator.surface.type1(this.props.a, this.props.b),
-            // })
-
             switch (this.props.calcObj) {
                 case "surface":
                     switch (this.props.calcObjType) {
@@ -76,20 +81,37 @@ class Calculator extends Component {
                             this.setState({
                                 a: this.props.a,
                                 b: this.props.b,
-                                result: this.calculator.surface.type2(this.props.a, this.props.b),
+                                c: this.props.c,
+                                result: this.calculator.surface.type2(this.props.a, this.props.b, this.props.c),
                             })
                             break;
                         case "type3":
                             this.setState({
                                 a: this.props.a,
                                 b: this.props.b,
-                                result: this.calculator.surface.type3(this.props.a, this.props.b),
+                                result: this.calculator.surface.type3(this.props.a),
+                            })
+                            break;
+                        case "type4":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.surface.type4(this.props.a),
+                            })
+                            break;
+                        case "type5":
+                            this.setState({
+                                a: this.props.a,
+                                b: this.props.b,
+                                result: this.calculator.surface.type1(this.props.a, this.props.b),
                             })
                             break;
                         default:
                             this.setState({
                                 a: this.props.a,
                                 b: this.props.b,
+                                c: this.props.c,
+                                d: this.props.d,
                                 result: undefined,
                             })
                     }
@@ -106,28 +128,30 @@ class Calculator extends Component {
                         case "type2":
                             this.setState({
                                 a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.circuit.type2(this.props.a, this.props.b),
+                                result: this.calculator.circuit.type2(this.props.a),
                             })
                             break;
                         case "type3":
                             this.setState({
                                 a: this.props.a,
                                 b: this.props.b,
-                                result: this.calculator.circuit.type3(this.props.a, this.props.b),
+                                c: this.props.c,
+                                d: this.props.d,
+                                result: this.calculator.circuit.type3(this.props.a, this.props.b, this.props.c, this.props.d),
                             })
                             break;
                         case "type4":
                             this.setState({
                                 a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.circuit.type4(this.props.a, this.props.b),
+                                result: this.calculator.circuit.type4(this.props.a),
                             })
                             break;
                         default:
                             this.setState({
                                 a: this.props.a,
                                 b: this.props.b,
+                                c: this.props.c,
+                                d: this.props.d,
                                 result: undefined,
                             })
                     }
@@ -136,6 +160,8 @@ class Calculator extends Component {
                     this.setState({
                         a: this.props.a,
                         b: this.props.b,
+                        c: this.props.c,
+                        d: this.props.d,
                         result: "error",
                     })
             }
@@ -147,7 +173,6 @@ class Calculator extends Component {
 
         const { result } = this.state;
         const { title, abridgement } = this.props;
-        console.log(this.props.calcObj + "." + this.props.calcObjType)
 
         return (
 
