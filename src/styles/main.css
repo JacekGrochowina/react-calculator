@@ -2112,6 +2112,13 @@ hr.major {
   margin-top: 2rem;
 }
 
+.subpage__section--error {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .subpage__h3 {
   text-align: center;
 }
