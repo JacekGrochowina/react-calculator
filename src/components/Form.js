@@ -17,8 +17,8 @@ class Form extends Component {
         })
     }
 
-    render() {
 
+    render() {
         const renderInput = (letter, id) => (
             <div className="input-wraper">
                 <h3 className="input__h3">Podaj {letter}</h3>
@@ -39,60 +39,74 @@ class Form extends Component {
         }
 
         switch (this.props.title) {
-            case 1:
+            case "surface":
                 data.title = "Pole";
                 data.abridgement = "P";
                 data.calcObj = "surface";
                 switch (this.props.type) {
-                    case 1:
-                        data.calcObjType = "type1";
-                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
-                        break;
-                    case 2:
-                        data.calcObjType = "type2";
-                        data.inputsList = [renderInput("a", 1), renderInput("b", 2), renderInput("h", 3)];
-                        break;
-                    case 3:
-                        data.calcObjType = "type3";
-                        data.inputsList = [renderInput("r", 1)];
-                        break;
-                    case 4:
-                        data.calcObjType = "type4";
+                    case "square":
+                        data.calcObjType = "square";
                         data.inputsList = [renderInput("a", 1)];
                         break;
-                    case 5:
-                        data.calcObjType = "type5";
+                    case "rectangle":
+                        data.calcObjType = "rectangle";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
+                        break;
+                    case "rhomb":
+                        data.calcObjType = "rhomb";
                         data.inputsList = [renderInput("a", 1), renderInput("h", 2)];
+                        break;
+                    case "parallelogram":
+                        data.calcObjType = "parallelogram";
+                        data.inputsList = [renderInput("a", 1), renderInput("h", 2)];
+                        break;
+                    case "trapeze":
+                        data.calcObjType = "trapeze";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2), renderInput("h", 3)];
+                        break;
+                    case "circle":
+                        data.calcObjType = "circle";
+                        data.inputsList = [renderInput("r", 1)];
                         break;
                     default:
                         data.calcObjType = "error";
                 }
                 break;
-            case 2:
+
+            case "circuit":
                 data.title = "Obwód";
                 data.abridgement = "Ob";
                 data.calcObj = "circuit";
                 switch (this.props.type) {
-                    case 1:
-                        data.calcObjType = "type1";
-                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
-                        break;
-                    case 2:
-                        data.calcObjType = "type2";
+                    case "square":
+                        data.calcObjType = "square";
                         data.inputsList = [renderInput("a", 1)];
                         break;
-                    case 3:
-                        data.calcObjType = "type3";
+                    case "rectangle":
+                        data.calcObjType = "rectangle";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
+                        break;
+                    case "rhomb":
+                        data.calcObjType = "rhomb";
+                        data.inputsList = [renderInput("a", 1)];
+                        break;
+                    case "parallelogram":
+                        data.calcObjType = "parallelogram";
+                        data.inputsList = [renderInput("a", 1), renderInput("b", 2)];
+                        break;
+                    case "trapeze":
+                        data.calcObjType = "trapeze";
                         data.inputsList = [renderInput("a", 1), renderInput("b", 2), renderInput("c", 3), renderInput("d", 4)];
                         break;
-                    case 4:
-                        data.calcObjType = "type4";
+                    case "circle":
+                        data.calcObjType = "circle";
                         data.inputsList = [renderInput("r", 1)];
                         break;
                     default:
                         data.calcObjType = "error";
                 }
                 break;
+
             default:
                 data.title = "Tytuł";
                 data.abridgement = "Skrót";
@@ -107,11 +121,11 @@ class Form extends Component {
                     {data.inputsList}
 
                     <Calculator
-                        figure={"square"}
-                        a={Number(this.state.number1)}
-                        b={Number(this.state.number2)}
-                        c={Number(this.state.number3)}
-                        d={Number(this.state.number4)}
+                        figure={this.props.name}
+                        num1={Number(this.state.number1)}
+                        num2={Number(this.state.number2)}
+                        num3={Number(this.state.number3)}
+                        num4={Number(this.state.number4)}
                         title={data.title}
                         abridgement={data.abridgement}
                         calcObj={data.calcObj}

@@ -19,35 +19,11 @@ class SquarePage extends Component {
     render() {
         return (
             <div className="square subpage" >
-
                 <ButtonWraper path="/" text="wstecz" type="back" />
-
-
                 <section className="subpage__section row">
-
-                    {
-                        /* Props => Form 
-                        
-                            title={1}   =>  "Surface" / "Pole"
-                                  {2}   =>  "Circuit" / "Obwód"
-                        
-                            title={1}   =>  type={1}  / number1*number2
-                                                 {2}  / 0,5*((number1+number2)*number3)
-                                                 {3}  / 3,14*number1*number1
-                                                 {4}  / number1*number1
-                                            
-                            title={2}   =>  type={1}  / 2*(number1)+2*(number2)
-                                                 {2}  / 4*(number1)
-                                                 {3}  / number1+number2+number3+number4
-                                                 {4}  / 2*3,14*number1
-                        */
-                    }
-
-                    <Form title={1} type={4} />
-                    <Form title={2} type={2} />
-
+                    <Form title="surface" type={this.props.options.name} />
+                    <Form title="circuit" type={this.props.options.name} />
                 </section>
-
             </div>
         );
     }

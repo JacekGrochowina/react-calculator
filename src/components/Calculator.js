@@ -4,51 +4,63 @@ class Calculator extends Component {
 
     state = {
         figure: this.props.name,
-        a: undefined,
-        b: undefined,
-        c: undefined,
-        d: undefined,
+        num1: undefined,
+        num2: undefined,
+        num3: undefined,
+        num4: undefined,
         result: undefined,
     }
 
-    calculator = {
+    calc = {
         surface: {
-            type1(number1, number2) {
-                let result = number1 * number2;
+            square(a) {
+                let result = a * a;
                 return result;
             },
-            type2(number1, number2, number3) {
-                let result = 0.5 * ((number1 + number2) * number3);
+            rectangle(a, b) {
+                let result = a * b;
                 return result;
             },
-            type3(number1) {
-                let result = 3.14 * number1 * number1;
+            rhomb(a, h) {
+                let result = a * h;
                 return result;
             },
-            type4(number1) {
-                let result = number1 * number1;
+            parallelogram(a, h) {
+                let result = a * h;
+                return result;
+            },
+            trapeze(a, b, h) {
+                let result = 0.5 * ((a + b) * h);
+                return result;
+            },
+            circle(r) {
+                let result = 3.1415 * r * r;
                 return result;
             },
         },
         circuit: {
-            type1(number1, number2) {
-                let result = 2 * (number1) + 2 * (number2);
+            square(a) {
+                let result = a * 4;
                 return result;
             },
-            type2(number1) {
-                let result = 4 * number1;
+            rectangle(a, b) {
+                let result = 2 * a + 2 * b;
                 return result;
             },
-            type3(number1, number2, number3, number4) {
-                let result = number1 + number2 + number3 + number4;
+            rhomb(a) {
+                let result = a * 4;
                 return result;
             },
-            type4(number1) {
-                let result = 2 * 3.14 * number1;
+            parallelogram(a, b) {
+                let result = 2 * a + 2 * b;
                 return result;
             },
-            type5(number1) {
-                let result = number1 * 4;
+            trapeze(a, b, c, d) {
+                let result = a + b + c + d;
+                return result;
+            },
+            circle(r) {
+                let result = 2 * 3.1415 * r;
                 return result;
             },
         }
@@ -66,102 +78,124 @@ class Calculator extends Component {
 
     componentDidUpdate(previousProps, previousState) {
 
+        const { num1, num2, num3, num4, calcObjType, calcObj } = this.props;
+
         if (previousProps !== this.props) {
-            switch (this.props.calcObj) {
+
+            switch (calcObj) {
                 case "surface":
-                    switch (this.props.calcObjType) {
-                        case "type1":
+                    switch (calcObjType) {
+                        case "square":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.surface.type1(this.props.a, this.props.b),
+                                num1: num1,
+                                result: this.calc.surface.square(num1),
                             })
                             break;
-                        case "type2":
+                        case "rectangle":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                c: this.props.c,
-                                result: this.calculator.surface.type2(this.props.a, this.props.b, this.props.c),
+                                num1: num1,
+                                num2: num2,
+                                result: this.calc.surface.rectangle(num1, num2),
                             })
                             break;
-                        case "type3":
+                        case "rhomb":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.surface.type3(this.props.a),
+                                num1: num1,
+                                num2: num2,
+                                result: this.calc.surface.rhomb(num1, num2),
                             })
                             break;
-                        case "type4":
+                        case "parallelogram":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.surface.type4(this.props.a),
+                                num1: num1,
+                                num2: num2,
+                                result: this.calc.surface.parallelogram(num1, num2),
                             })
                             break;
-                        case "type5":
+                        case "trapeze":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.surface.type1(this.props.a, this.props.b),
+                                num1: num1,
+                                num2: num2,
+                                num3: num3,
+                                result: this.calc.surface.trapeze(num1, num2, num3),
+                            })
+                            break;
+                        case "circle":
+                            this.setState({
+                                num1: num1,
+                                result: this.calc.surface.circle(num1),
                             })
                             break;
                         default:
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                c: this.props.c,
-                                d: this.props.d,
+                                num1: num1,
+                                num2: num2,
+                                num3: num3,
+                                num4: num4,
                                 result: undefined,
                             })
                     }
                     break;
+
                 case "circuit":
-                    switch (this.props.calcObjType) {
-                        case "type1":
+                    switch (calcObjType) {
+                        case "square":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                result: this.calculator.circuit.type1(this.props.a, this.props.b),
+                                num1: num1,
+                                result: this.calc.circuit.square(num1),
                             })
                             break;
-                        case "type2":
+                        case "rectangle":
                             this.setState({
-                                a: this.props.a,
-                                result: this.calculator.circuit.type2(this.props.a),
+                                num1: num1,
+                                num2: num2,
+                                result: this.calc.circuit.rectangle(num1, num2),
                             })
                             break;
-                        case "type3":
+                        case "rhomb":
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                c: this.props.c,
-                                d: this.props.d,
-                                result: this.calculator.circuit.type3(this.props.a, this.props.b, this.props.c, this.props.d),
+                                num1: num1,
+                                result: this.calc.circuit.rhomb(num1),
                             })
                             break;
-                        case "type4":
+                        case "parallelogram":
                             this.setState({
-                                a: this.props.a,
-                                result: this.calculator.circuit.type4(this.props.a),
+                                num1: num1,
+                                result: this.calc.circuit.parallelogram(num1, num2),
+                            })
+                            break;
+                        case "trapeze":
+                            this.setState({
+                                num1: num1,
+                                num2: num2,
+                                num3: num3,
+                                num4: num4,
+                                result: this.calc.circuit.trapeze(num1, num2, num3, num4),
+                            })
+                            break;
+                        case "circle":
+                            this.setState({
+                                num1: num1,
+                                result: this.calc.circuit.circle(num1),
                             })
                             break;
                         default:
                             this.setState({
-                                a: this.props.a,
-                                b: this.props.b,
-                                c: this.props.c,
-                                d: this.props.d,
+                                num1: num1,
+                                num2: num2,
+                                num3: num3,
+                                num4: num4,
                                 result: undefined,
                             })
                     }
                     break;
+
                 default:
                     this.setState({
-                        a: this.props.a,
-                        b: this.props.b,
-                        c: this.props.c,
-                        d: this.props.d,
+                        num1: num1,
+                        num2: num2,
+                        num3: num3,
+                        num4: num4,
                         result: "error",
                     })
             }

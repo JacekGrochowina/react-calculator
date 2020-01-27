@@ -9,7 +9,7 @@ const ErrorPage = () => {
         <div className="error subpage">
             <ButtonWraper path="/" text="wstecz" type="back" />
 
-            <section className="subpage__section">
+            <section className="subpage__section subpage__section--error">
                 <h1 className="error__h1">Coś nie tak ...</h1>
                 <h3 className="error__h3">Nie udało się znaleźć takiej strony</h3>
                 <FontAwesomeIcon icon={['fas', 'frown-open']} className="error__icon" />
