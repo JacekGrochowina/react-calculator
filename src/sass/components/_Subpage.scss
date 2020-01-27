@@ -7,6 +7,9 @@
         &__section {
             flex-direction: row;
             margin-top: 2rem;
+            &--error {
+                flex-direction: column;
+            }
         }
         &__h3 {
             text-align: center;
