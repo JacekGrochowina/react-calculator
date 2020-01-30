@@ -24,7 +24,7 @@ class Form extends Component {
                 <h3 className="input__h3">Podaj {letter}</h3>
                 <div className="row">
                     <h3 className="input__h3--var">{letter} =</h3>
-                    <input className="input" type="number" name={`number${Number(id)}`} onChange={this.handleOnChange}
+                    <input className="input" type="number" name={`number${Number(id)}`} onChange={this.handleOnChange} min="0"
                         value={id === 1 ? this.state.number1 : id === 2 ? this.state.number2 : id === 3 ? this.state.number3 : this.state.number4} />
                 </div>
             </div>

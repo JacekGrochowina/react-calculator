@@ -10,8 +10,6 @@ import RhombPage from '../pages/RhombPage';
 import ParallelogramPage from '../pages/ParallelogramPage';
 import TrapezePage from '../pages/TrapezePage';
 import CirclePage from '../pages/CirclePage';
-import CubePage from '../pages/CubePage';
-import CuboidPage from '../pages/CuboidPage';
 
 /* Import Images */
 import SquareIcon from '../images/square.svg';
@@ -20,8 +18,6 @@ import RhombIcon from '../images/rhomb.svg';
 import ParallelogramIcon from '../images/parallelogram.svg';
 import TrapezeIcon from '../images/trapeze.svg';
 import CircleIcon from '../images/circle.svg';
-import CubeIcon from '../images/cube.svg';
-import CuboidIcon from '../images/cuboid.svg';
 
 /* Main Data Object */
 const options = [
@@ -67,20 +63,6 @@ const options = [
         icon: CircleIcon,
         path: "/kolo",
     },
-    {
-        id: 7,
-        title: "Sześcian",
-        name: "cube",
-        icon: CubeIcon,
-        path: "/szescian",
-    },
-    {
-        id: 8,
-        title: "Prostopadłościan",
-        name: "cuboid",
-        icon: CuboidIcon,
-        path: "/prostopadloscian",
-    }
 ]
 
 const Page = () => {
@@ -96,8 +78,6 @@ const Page = () => {
                     <Route path="/rownoleglobok" exact render={(props) => <ParallelogramPage options={options[3]} />} />
                     <Route path="/trapez" exact render={(props) => <TrapezePage options={options[4]} />} />
                     <Route path="/kolo" exact render={(props) => <CirclePage options={options[5]} />} />
-                    <Route path="/szescian" exact render={(props) => <CubePage options={options[6]} />} />
-                    <Route path="/prostopadloscian" exact render={(props) => <CuboidPage options={options[7]} />} />
 
                     <Route component={ErrorPage} />
                 </Switch>
